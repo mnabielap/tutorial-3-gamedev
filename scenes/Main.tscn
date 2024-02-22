@@ -1,14 +1,18 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
 
 [node name="Root" type="Node2D"]
 
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 156, 71 )
+
 [node name="Ground" parent="." instance=ExtResource( 1 )]
-position = Vector2( 507.708, 363.86 )
+position = Vector2( 515.758, 561.806 )
 
 [node name="Ground2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 789.149, 294.054 )
+position = Vector2( 797.199, 492 )
 
 [node name="Ground3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 225.95, 294.562 )
+position = Vector2( 234, 492.508 )
