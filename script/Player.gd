@@ -23,7 +23,7 @@ func get_input():
 	if not is_on_floor() and jumps < max_jumps and Input.is_action_just_pressed('up'):
 		velocity.y = jump_speed
 		jumps += 1
-	if Input.is_action_just_pressed("ui_home") and not is_dashing:
+	if Input.is_action_just_pressed("ui_select") and not is_dashing:
 		is_dashing = true
 		dash_timer = dash_duration
 	if is_dashing:
